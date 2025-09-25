@@ -1,0 +1,108 @@
+/* พื้นหลังและเลย์เอาต์ */
+.auth-page {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9fb;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeUp .5s ease both;
+}
+
+.auth-header {
+  text-align: center;
+}
+.auth-header h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+}
+.auth-header p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ปุ่มสลับโหมด */
+.auth-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Google button */
+.auth-google {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.auth-google:hover {
+  border-color: #ff7a1a;
+  box-shadow: 0 2px 8px rgba(255,122,26,0.2);
+}
+
+/* ฟอร์ม */
+.auth-form {
+  display: grid;
+  gap: 12px;
+}
+.auth-form label {
+  font-size: 12px;
+  color: #6b7280;
+}
+.auth-form .input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font-size: 14px;
+}
+.auth-form .input:focus {
+  border-color: #ff7a1a;
+  box-shadow: 0 0 0 3px rgba(255,122,26,0.2);
+}
+
+/* ปุ่มหลัก */
+.auth-form .btn {
+  width: 100%;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* ข้อความสถานะ */
+.auth-msg {
+  margin-top: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+.auth-msg.success { color: #059669; }
+.auth-msg.error { color: #b91c1c; }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-card { padding: 24px 20px; }
+  .auth-header h2 { font-size: 22px; }
+}

@@ -1,0 +1,11 @@
+:root{
+  --brand: #ff7a1a;         /* ส้ม */
+  --brand-600: #ff6a00;
+  --ink: #111827;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --bg: #fffdfb;
+  --ring: rgba(255,122,26,.25);
+  --shadow: 0 8px 24px rgba(0,0,0,.08);
+  --radius: 16px;
+}
